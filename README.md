@@ -1,34 +1,35 @@
-# 微信小程序示例
-微信小程序示例源码，欢迎扫描以下小程序码体验。
+# 微信小程序转支付宝小程序示例
 
-> 提示：请使用微信开发者工具或微信客户端 6.7.2 及以上版本运行。
+提供从微信官方demo转支付宝小程序的模板参考
 
-<img width="200" src="https://res.wx.qq.com/op_res/QqOF7ydl0dkpq-orpebXL-gBspr08VjoFOFGrWvKF9IULLhfT9XhnsSKlvc0gI8d">
+## 步骤
 
-## 使用
+1. 安装依赖
+```npm install```
+2. 全局安装cli 
+```npm i -g wx-convert```
+4. 调整convert下相关信息
+3. 执行 ```wx-convert aplugin```
+5. 使用支付宝小程序工具预览dist目录下的项目
 
-```
-npm run init
-```
-完成上述步骤后，使用微信开发者工具，点击【工具-构建npm】
+## 个人项目使用
 
-使用[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)打开该示例代码，云开发环境搭建请参考[云开发示例说明](https://github.com/wechat-miniprogram/miniprogram-demo/blob/master/miniprogram/page/cloud/README.md)。
+1. 拷贝 convert.config.js 到项目根目录
+2. clone [convert项目](https://github.com/wyyxdgm/convert.git) 到 项目下的convert
+3. 调整convert下的相关信息
+4. 执行 ```wx-convert aplugin```
+5. 使用支付宝小程序工具预览dist目录下的项目
 
+## 项目关系参考
+
+模板工程 [convert-miniprogram-to-aliminiprogram-template](https://github.com/wyyxdgm/convert-miniprogram-to-aliminiprogram-template) 包含微信官方小程序和cli以及convert目录解析，用于总体模板工程结构参考
+[cli](https://github.com/wyyxdgm/wx-convert) 本工程，cli，用于根据规则转换模板工程
+[convert](https://github.com/wyyxdgm/convert) [convert-miniprogram-to-aliminiprogram-template](https://github.com/wyyxdgm/convert-miniprogram-to-aliminiprogram-template)内部子仓库，包含convert规则，用于迭代代码转换规则，可自定义扩展
+
+## TODO
+
+文档和案例完善中
 
 ## 贡献
 
 如果你有 bug 反馈或其他任何建议，欢迎提 issue 给我们。
-
-如果你愿意一起来完善小程序示例，欢迎通过 PR 的方式贡献代码。为了保证代码风格的统一，在编写代码之前，请在项目根目录miniprogram下运行以下命令安装依赖：
-
-```
-npm install
-```
-同时，确保你的代码可以通过 Lint 检查：
-```
-npm run lint
-```
-
-## 截图
-
-<img width="375" src="https://res.wx.qq.com/op_res/0_vsSii5DaG-1hoXcqmBCT_tPShgSPKi3_FBVuVj1tu1ZdZD8lwYNrSQm3mdswI2">
