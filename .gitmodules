@@ -3,4 +3,4 @@
 	url = git@github.com:wechat-miniprogram/awesome-skyline.git
 [submodule "convert"]
 	path = convert
-	url = https://github.com/wyyxdgm/convert.git
+	url = git@github.com:wyyxdgm/convert.git
