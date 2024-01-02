@@ -41,7 +41,7 @@ module.exports = {
     // 部分页面既有less又有wxss，在支付宝中不支持
     if (p.endsWith(".less")) {
       if (fs.existsSync(path.join(fromDir, p.replace(".less", ".wxss")))) {
-        console.log(`[删除less文件]存在同名wxss：${p}`);
+        console.warn(`[删除less文件]存在同名wxss：${p}`);
         return false;
       }
     }
