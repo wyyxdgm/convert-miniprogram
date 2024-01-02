@@ -68,10 +68,19 @@
     "tabSize": 2
   },
   "packOptions": {
-    "ignore": [],
+    "ignore": [
+      {
+        "value": "dist",
+        "type": "folder"
+      },
+      {
+        "value": "convert",
+        "type": "folder"
+      }
+    ],
     "include": []
   },
-  "appid": "wxe5f52902cf4de896",
+  "appid": "wxf4591aae94104fa1",
   "projectname": "miniprogram-demo-master",
   "libVersion": "2.33.0"
 }
