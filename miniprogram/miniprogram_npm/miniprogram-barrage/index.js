@@ -1,11 +1,3 @@
-'use strict';
-
-function createCommonjsModule(fn) {
-  var module = { exports: {} };
-	return fn(module, module.exports), module.exports;
-}
-
-createCommonjsModule(function (module) {
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -97,6 +89,8 @@ module.exports =
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
 
 // 获取字节长度，中文算2个字节
 function getStrLen(str) {
@@ -173,6 +167,8 @@ module.exports = {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
 
 var _barrageDom = __webpack_require__(2);
 
@@ -235,6 +231,8 @@ Component({
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 exports.__esModule = true;
@@ -790,6 +788,8 @@ exports.default = Barrage;
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 exports.__esModule = true;
@@ -1366,4 +1366,3 @@ exports.default = Barrage;
 
 /***/ })
 /******/ ]);
-});

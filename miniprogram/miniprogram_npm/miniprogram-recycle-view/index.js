@@ -1,11 +1,3 @@
-'use strict';
-
-function createCommonjsModule(fn) {
-  var module = { exports: {} };
-	return fn(module, module.exports), module.exports;
-}
-
-createCommonjsModule(function (module) {
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -97,6 +89,8 @@ module.exports =
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
 
 var isIPhone = false;
 var deviceWidth = void 0;
@@ -108,6 +102,12 @@ var checkDeviceWidth = function checkDeviceWidth() {
   isIPhone = info.platform === 'ios';
   var newDeviceWidth = info.screenWidth || 375;
   var newDeviceDPR = info.pixelRatio || 2;
+
+  if (!isIPhone) {
+    // HACK switch width and height when landscape
+    // const newDeviceHeight = info.screenHeight || 375
+    // 暂时不处理转屏的情况
+  }
 
   if (newDeviceWidth !== deviceWidth || newDeviceDPR !== deviceDPR) {
     deviceWidth = newDeviceWidth;
@@ -154,12 +154,16 @@ module.exports = {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
 
 module.exports = {};
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 /**
@@ -183,6 +187,8 @@ module.exports = function (options) {
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -781,6 +787,8 @@ module.exports = RecycleContext;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
 
 /* eslint complexity: ["error", {"max": 50}] */
 var recycleData = __webpack_require__(1);
@@ -841,4 +849,3 @@ module.exports = function (e, cb) {
 
 /***/ })
 /******/ ]);
-});
