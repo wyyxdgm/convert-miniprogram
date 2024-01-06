@@ -1,5 +1,5 @@
 import arBehavior from '../behavior/behavior-ar'
-import xrFrameBehavior from '../behavior/behavior-xrframe'
+import xrFrameBehavior from '../behavior/behavior-xrFrame'
 
 // VK 投影矩阵参数定义
 const NEAR = 0.01

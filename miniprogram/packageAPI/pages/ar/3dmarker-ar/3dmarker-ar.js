@@ -1,5 +1,5 @@
 import arBehavior from '../behavior/behavior-ar'
-import xrFrameBehavior from '../behavior/behavior-xrframe'
+import xrFrameBehavior from '../behavior/behavior-xrFrame'
 
 
 // protobuf 相关逻辑
