@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "WeChat miniprogram demo",
   "scripts": {
+    "init:convert": "npm i && cd convert && npm i",
     "init": "npm run sync && cd cloudfunctions/ && npm i --production && cd ../miniprogram/ && npm i --production",
     "lint": "eslint .",
     "wxss:transform-vars": "gulp transform-css-vars",
