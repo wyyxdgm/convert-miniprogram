@@ -6,9 +6,10 @@ module.exports = {
   targetDir: "./dist/aprogram", // 生成代码根目录
   templateDir: "./convert/template", // 模板文件目录，将被同步到`targetDir/${miniprogramRoot}`下
   // miniprogramRoot: "miniprogram", // 默认同project.config.json中的miniprogramRoot
-  rsync: { // 支持文件和目录
+  rsync: {
+    // 支持文件和目录
     // 将文件直接同步到多个目标文件
-    // "miniprogram/miniprogram_npm": ["./dist/aprogram/miniprogram/miniprogram_npm"],
+    "convert/template_rsync/tsconfig.json": ["./dist/aprogram/tsconfig.json"],
     // "convert/template_sync/$my.js": ["convert/template/$my.js"],
     // "convert/template_sync/enhance.js": ["convert/template/enhance.js"]
   },
