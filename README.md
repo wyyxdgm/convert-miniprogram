@@ -5,20 +5,30 @@
 ## 步骤
 
 1. 安装依赖
-```npm install```
+```
+npm run init:convert
+```
 2. 全局安装cli 
-```npm i -g wx-convert```
-4. 调整convert下相关信息
-3. 执行 ```wx-convert aplugin```
-5. 使用支付宝小程序工具预览dist目录下的项目
+```
+npm i -g wx-convert
+```
+3. 执行
+```sh
+wx-convert aplugin  # `将生成支付宝项目到dist/aprogram`
+```
 
 ## 个人项目使用
 
 1. 拷贝 convert.config.js 到项目根目录
-2. clone [convert项目](https://github.com/wyyxdgm/convert.git) 到 项目下的convert
-3. 调整convert下的相关信息
-4. 执行 ```wx-convert aplugin```
-5. 使用支付宝小程序工具预览dist目录下的项目
+2. clone [convert项目](https://github.com/wyyxdgm/convert.git) 到当前项目下
+```bash
+# cd my/wx/project
+git clone https://github.com/wyyxdgm/convert.git
+cd convert && npm inststall # 安装convert脚本依赖
+cd -
+wx-convert aplugin
+```
+5. 使用支付宝小程序工具预览dist目录下的aprogram项目
 
 ## 项目关系参考
 
