@@ -15,7 +15,7 @@ module.exports = {
   },
   filterDir: (p, fromDir) => {
     // 文件过滤器，过滤需要被解析的文件。针对路径p,返回Boolean值，true:需要处理;false:无需处理
-    p = p.substr(fromDir.length + 1);
+    p = p.substr(fromDir.length + 1).replace(/\\/, "/");
     // whitelist - 必须处理
     if ([".gitignore"].find((fnameStart) => p.indexOf(fnameStart) === 0)) return true;
     // blacklist - 无需处理
